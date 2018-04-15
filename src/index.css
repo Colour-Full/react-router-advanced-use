@@ -1,0 +1,129 @@
+body {
+  background-color: #B9DEDF;
+  padding: 20px;
+  margin: 0;
+}
+h1, h2, p, ul, li {
+  font-family: sans-serif;
+}
+ul.header li {
+  display: inline;
+  list-style-type: none;
+  margin: 0;
+}
+ul.header {
+  background-color:#2B2F3F;
+  padding: 0;
+  -webkit-box-shadow: 3px 7px 10px 0px rgba(45, 46, 67, 0.85);
+  -moz-box-shadow:    3px 7px 10px 0px rgba(45, 46, 67, 0.85);
+  box-shadow:         3px 7px 10px 0px rgba(45, 46, 67, 0.85);
+}
+ul.header li a {
+  color: #FFF;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 20px;
+  display: inline-block;
+}
+.content {
+  height: 250px;
+  position: relative;
+  background-color: #FFF;
+  padding: 20px;
+  -webkit-box-shadow: 2px 4px 8px 0px rgba(45, 46, 67, 0.85);
+  -moz-box-shadow:    2px 4px 8px 0px rgba(45, 46, 67, 0.85);
+  box-shadow:         2px 4px 8px 0px rgba(45, 46, 67, 0.85);
+}
+h1 {
+  color: #29303D;
+}
+.content h2 {
+  padding: 0;
+  margin: 0;
+}
+.content li {
+  list-style: none;
+  margin-bottom: 50px;
+}
+
+.content a {
+  color:  #5EA1A6;
+}
+.active {
+  background-color: #5EA1A6;
+}
+
+.post {
+    width: 500px;
+    height: 200px;
+    top: 50px;
+    position: fixed;
+    left: 50%;
+    padding: 25px;
+    background: #FFF;
+    border: 2px solid #29303D;
+    margin-left: -250px;
+}
+
+.post-container {
+  position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.post-back-button {
+    padding: 10px;
+    font-weight: 900;
+    color: #FFF;
+    background-color:  #5EA1A6;
+    border: 1px solid #29303D;
+}
+
+.fadeIn-appear,
+.fadeIn-enter {
+	opacity: 0;
+}
+.fadeIn-appear-active,
+.fadeIn-enter-active {
+  transition: opacity 1s;
+	opacity: 1;
+}
+
+.fadeIn-exit {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  opacity: 1;
+}
+
+.fadeIn-exit-active {
+	transition: opacity 0.5s;
+  opacity: 0.01;
+}
+
+.postFadeIn-appear,
+.postFadeIn-enter {
+  opacity: 0;
+  top: 100px;
+}
+.postFadeIn-appear-active,
+.postFadeIn-enter-active {
+  transition: opacity 1s, top 1s;
+  opacity: 1;
+  top: 50px;
+}
+
+.postFadeIn-exit {
+  opacity: 1;
+  top: 50px;
+}
+
+.postFadeIn-exit-active {
+	transition: opacity 0.5s, top 0.5s;
+  opacity: 0.01;
+  top: 100px;
+}
